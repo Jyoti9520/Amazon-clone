@@ -1,256 +1,250 @@
 *{
     margin:0;
-    font-family:Arial;
-    border:border-box;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
+
+/* ================= NAVBAR ================= */
+
 .navbar{
     height:60px;
     background-color:#0f1111;
     color:white;
     display:flex;
-    flex-direction:row;
     align-items:center;
     justify-content:space-evenly;
 }
+
 .nav-logo{
     height:50px;
     width:100px;
-    margin-right:20px;
-    margin-bottom:12px;
 }
+
 .logo{
-    background-image:url("amazon_logo.png");
+    background-image:url("images/amazon_logo.png");
     background-size:cover;
     height:50px;
     width:100%;
-    padding:1px 8px 0px 6px;
-    transition:border infinite linear 0;
-    
 }
+
 .logo:hover{
     border:2px solid white;
 }
+
+/* ================= ADDRESS ================= */
+
+.address{
+    height:50px;
+}
+
+.address:hover{
+    border:2px solid white;
+}
+
 .icon{
     display:flex;
     align-items:center;
 }
+
 .Add1{
     color:#cccccc;
     font-size:0.85rem;
     margin-left:24px;
-    margin-top:8px;
 }
+
 .Add2{
     font-size:1rem;
     margin-left:4px;
 }
-.address{
-    height:50px;
-    transition:border infinite linear 0;
-    margin-left:25px;
-}
-.address:hover{
-    border:2px solid white;
-}
+
+/* ================= SEARCH ================= */
+
 .search{
     display:flex;
     width:600px;
-    background-color:pink;
-    border-radius:5px;
-    margin-left:40px;
-}
-.drop{
-    width:45px;
     height:40px;
-    text-align:center;
+    border-radius:5px;
+}
+
+.search:hover{
+    border:3px solid orange;
+}
+
+.drop{
+    width:50px;
+    border:none;
     border-top-left-radius:5px;
     border-bottom-left-radius:5px;
-    border:none;
-    border-right:1px solid gray;
-    
 }
+
 .Search-bar{
     width:100%;
     font-size:1rem;
     border:none;
 }
+
 .Search-icon{
     background-color:#febd68;
+    width:45px;
     display:flex;
-    width:45px;
-    justify-content:center;
     align-items:center;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    font-size:1.3rem;
+    justify-content:center;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
 }
+
 .but{
-    background-color:#febd68;
+    background:none;
     border:none;
-    width:45px;
-    height:40px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    font-size:1.3rem;
+    font-size:1.2rem;
 }
+
+/* ================= ACCOUNT & CART ================= */
+
 .account{
     font-size:0.7rem;
-
 }
+
 .acc{
     font-size:1rem;
     font-weight:700;
 }
+
 .account:hover{
     border:2px solid white;
 }
-.search:hover{
-border:3px solid orange;
-}
-.cart i{
-    font-size:30px;
-}
+
 .cart{
     font-size:1rem;
     font-weight:700;
 }
-.cart:hover{
-border:2px solid white;
+
+.cart i{
+    font-size:30px;
 }
+
+.cart:hover{
+    border:2px solid white;
+}
+
+/* ================= PANEL ================= */
+
 .panel{
     height:40px;
     background-color:#222f3d;
-    display:flex;
     color:white;
+    display:flex;
     align-items:center;
     justify-content:space-evenly;
 }
-.options a{
-    display:inline;
-    margin-left:15px;
-    color:white;
-    text-decoration:none;
-}
-.last a{
-    color:white;
-    text-decoration:none;
-}
+
 .options{
     width:70%;
     font-size:0.8rem;
 }
+
+.options a,
+.last a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+}
+
 .last{
     font-weight:700;
 }
+
+/* ================= HERO ================= */
+
 .hero{
-    background-image:url("hero_image.jpg");
+    background-image:url("images/hero_image.jpg");
     background-size:cover;
     height:350px;
     display:flex;
-    align-items:end;
+    align-items:flex-end;
 }
+
 .msg{
-    background-color:rgb(242, 238, 238);
+    background-color:#f3f3f3;
     width:95%;
-    margin-left:2.5%;
     height:40px;
+    margin:0 auto 30px;
     display:flex;
-    justify-content: center;
     align-items:center;
-    margin-bottom:30px;
+    justify-content:center;
+    font-size:0.85rem;
 }
+
 .msg a{
     color:#007185;
     text-decoration:none;
 }
+
+/* ================= SHOPPING ================= */
+
 .shopping{
     display:flex;
+    flex-wrap:wrap;
     justify-content:space-evenly;
     background-color:#ebefef;
-    flex-wrap:wrap;
 }
+
 .box{
     height:400px;
     width:22%;
-    background-color: white;
-    padding:20px 0px 15px;
+    background-color:white;
+    padding:20px 0 15px;
     margin-top:15px;
 }
-.img1{
-    background-image:url("box1_image.jpg");
-    height:320px;
-    background-size:cover;
-    margin-top:1rem;
-    margin-bottom:1rem;
-}
+
 .content{
-    margin-left:1rem;
-    margin-right:1rem;
+    margin:0 1rem;
 }
-.content p{
+
+.shopping a{
     color:#007185;
+    text-decoration:none;
 }
-.img2{
-    background-image:url("box2_image.jpg");
+
+.shopping a:hover{
+    color:#03158f;
+}
+
+/* ================= BOX IMAGES ================= */
+
+.img1{background-image:url("images/box1_image.jpg");}
+.img2{background-image:url("images/box2_image.jpg");}
+.img3{background-image:url("images/box3_image.jpg");}
+.img4{background-image:url("images/box4_image.jpg");}
+.img5{background-image:url("images/box5_image.jpg");}
+.img6{background-image:url("images/box6_image.jpg");}
+.img7{background-image:url("images/box7_image.jpg");}
+.img8{background-image:url("images/box8_image.jpg");}
+
+.img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8{
     height:320px;
     background-size:cover;
     margin-top:1rem;
     margin-bottom:1rem;
 }
-.img3{
-    background-image:url("box3_image.jpg");
-    height:320px;
-    background-size:cover;
-    margin-top:1rem;
-    margin-bottom:1rem;
-}
-.img4{
-    background-image:url("box4_image.jpg");
-    height:320px;
-    background-size:cover;
-    margin-top:1rem;
-    margin-bottom:1rem;
-}
-.img5{
-    background-image:url("box5_image.jpg");
-    height:320px;
-    background-size:cover;
-    margin-top:1rem;
-    margin-bottom:1rem;
-}
-.img6{
-    background-image:url("box6_image.jpg");
-    height:320px;
-    background-size:cover;
-    margin-top:1rem;
-    margin-bottom:1rem;
-}
-.img7{
-    background-image:url("box7_image.jpg");
-    height:320px;
-    background-size:cover;
-    margin-top:1rem;
-    margin-bottom:1rem;
-}
-.img8{
-    background-image:url("box8_image.jpg");
-    height:320px;
-    background-size:cover;
-    margin-top:1rem;
-    margin-bottom:1rem;
-}
+
+/* ================= FOOTER ================= */
+
 footer{
     margin-top:1rem;
 }
+
 .fpanel1{
     background-color:#37475a;
-    color: white;
+    color:white;
     height:50px;
     display:flex;
     align-items:center;
     justify-content:center;
     font-size:0.8rem;
 }
+
 .fpanel2{
     background-color:#222f3d;
     color:white;
@@ -258,66 +252,58 @@ footer{
     display:flex;
     justify-content:space-evenly;
 }
+
 ul{
     margin-top:20px;
 }
+
 ul a{
     display:block;
     font-size:0.8rem;
-    color:#DDDDDD;
-    margin-top:15px;
+    color:#dddddd;
+    margin-top:10px;
+    text-decoration:none;
 }
+
+ul a:hover{
+    text-decoration:underline;
+}
+
 ul p{
     font-size:1rem;
     font-weight:700;
 }
+
 .fpanel3{
     background-color:#222f3d;
-    color:white;
     border-top:0.5px solid white;
     height:70px;
     display:flex;
     justify-content:center;
     align-items:center;
 }
+
 .logo2{
-    background-image:url("amazon_logo.png");
+    background-image:url("images/amazon_logo.png");
     background-size:cover;
     height:50px;
-    width:100px;;
+    width:100px;
 }
+
 .fpanel4{
     background-color:#0f1111;
     color:white;
-    /* display:flex;
-    align-items: center;
-    justify-content:center ; */
     height:100px;
 }
-.pages{
-    font-size:0.8rem;
-    text-align:center;
-    padding-top:25px;
-}
+
+.pages,
 .copyright{
-    padding-top:25px;
-    font-size:0.8rem;
     text-align:center;
+    font-size:0.8rem;
+    padding-top:20px;
 }
+
 .pages a{
     color:white;
-     text-decoration: none;
-}
-.shopping a{
-    color:#007185;
-    text-decoration: none;
-}
-.fpanel2 a{
     text-decoration:none;
-}
-.fpanel2 a:hover{
-text-decoration:underline;
-}
-.shopping a:hover{
-    color:#03158f
 }
